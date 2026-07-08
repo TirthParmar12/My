@@ -324,7 +324,7 @@ def prompt_join_channels(chat_id):
                     url = f"https://t.me/c/{str(channel).replace('-100', '')}"
         except Exception as e:
             print(f"⚠️ [JOIN CHECK] Error getting chat info for {channel}: {e}")
-            url = f"https://t.me/ShadowCipherX1" # Fallback to developer
+            url = f"https://t.me/tp_cashout" # Fallback to developer
                 
         btn = types.InlineKeyboardButton(f"📢 Join {title}", url=url)
         markup.add(btn)
